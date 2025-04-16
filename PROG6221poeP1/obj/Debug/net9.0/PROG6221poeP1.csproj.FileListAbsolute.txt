@@ -1,0 +1,14 @@
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\bin\Debug\net9.0\PROG6221poeP1.exe
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\bin\Debug\net9.0\PROG6221poeP1.deps.json
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\bin\Debug\net9.0\PROG6221poeP1.runtimeconfig.json
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\bin\Debug\net9.0\PROG6221poeP1.dll
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\bin\Debug\net9.0\PROG6221poeP1.pdb
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.AssemblyInfoInputs.cache
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.AssemblyInfo.cs
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.csproj.CoreCompileInputs.cache
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.dll
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\refint\PROG6221poeP1.dll
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.pdb
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\PROG6221poeP1.genruntimeconfig.cache
+C:\Users\lab_services_student\Desktop\Progpoe\PROG6221poeP1\PROG6221poeP1\obj\Debug\net9.0\ref\PROG6221poeP1.dll
