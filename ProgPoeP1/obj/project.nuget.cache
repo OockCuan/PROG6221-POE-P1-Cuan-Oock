@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "GgaMTrEYYcU=",
+  "dgSpecHash": "3Ky1F2c78+c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\ProgPoeP1\\ProgPoeP1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\ProgPoeP1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lab_services_student\\.nuget\\packages\\system.windows.extensions\\9.0.4\\system.windows.extensions.9.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -3,9 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Media;
+
+
 
 namespace ProgPoeP1
+
 {
+
     internal class Chatbot
     {
         private string name;
@@ -13,11 +18,23 @@ namespace ProgPoeP1
         //method containing greeting code
         public void greeting()
         {
+            //Audio greeting in try catch block
+            try
+            {
+                SoundPlayer player = new SoundPlayer();
+                player.SoundLocation = "greeting.wav";
+                player.Play();
+                
+            } catch(Exception e) {
+                Console.WriteLine("Couldn't play audio greeting");
+            }
+
             //Header
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             Console.WriteLine("    __  __ __  ____     ___  ____        _____   ___    __  __ __  ____   ____  ______  __ __      ____    ___   ______ \r\n   /  ]|  |  ||    \\   /  _]|    \\      / ___/  /  _]  /  ]|  |  ||    \\ |    ||      ||  |  |    |    \\  /   \\ |      |\r\n  /  / |  |  ||  o  ) /  [_ |  D  )    (   \\_  /  [_  /  / |  |  ||  D  ) |  | |      ||  |  |    |  o  )|     ||      |\r\n /  /  |  ~  ||     ||    _]|    /      \\__  ||    _]/  /  |  |  ||    /  |  | |_|  |_||  ~  |    |     ||  O  ||_|  |_|\r\n/   \\_ |___, ||  O  ||   [_ |    \\      /  \\ ||   [_/   \\_ |  :  ||    \\  |  |   |  |  |___, |    |  O  ||     |  |  |  \r\n\\     ||     ||     ||     ||  .  \\     \\    ||     \\     ||     ||  .  \\ |  |   |  |  |     |    |     ||     |  |  |  \r\n \\____||____/ |_____||_____||__|\\_|      \\___||_____|\\____| \\__,_||__|\\_||____|  |__|  |____/     |_____| \\___/   |__| ");
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
             Console.WriteLine("");
+            Thread.Sleep(6000);
             //Asking for name
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine("Hello, I am your cybersecurity chat bot. What's your name?");

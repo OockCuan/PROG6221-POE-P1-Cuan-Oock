@@ -1,6 +1,9 @@
-﻿namespace ProgPoeP1
+﻿
+namespace ProgPoeP1
 {
+
     internal class Program
+
     {
         static void Main(string[] args)
         {
@@ -18,7 +21,9 @@
                 Console.WriteLine(chat.questionWords(response));
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("\n************************\n");
                 response = Console.ReadLine();
+                
 
             }
 
