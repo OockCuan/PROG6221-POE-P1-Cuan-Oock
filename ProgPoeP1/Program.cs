@@ -12,13 +12,14 @@ namespace ProgPoeP1
             string response = Console.ReadLine();
 
 
-
+            //Continuing the application until the user types in "stop"
             while (!(response.Equals("Stop") | response.Equals("stop")))
             {
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Magenta;
-                Console.WriteLine(chat.keyWords(response));
-                Console.WriteLine(chat.questionWords(response));
+
+                //Using three methods to identify key words in user input and return a response
+                Console.WriteLine(chat.respond(chat.keyWords(response), chat.questionWords(response)));
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("\n************************\n");
