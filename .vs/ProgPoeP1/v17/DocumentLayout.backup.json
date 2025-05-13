@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|c:\\users\\lab_services_student\\desktop\\progpoe\\prog6221-poe-p1-cuan-oock\\progpoep1\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|solutionrelative:progpoep1\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|c:\\users\\lab_services_student\\desktop\\progpoe\\prog6221-poe-p1-cuan-oock\\progpoep1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|solutionrelative:progpoep1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|c:\\users\\lab_services_student\\desktop\\progpoe\\prog6221-poe-p1-cuan-oock\\progpoep1\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9033EEBC-BF06-47C5-965C-EE19CDD6B09D}|ProgPoeP1\\ProgPoeP1.csproj|solutionrelative:progpoep1\\chatbot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Chatbot.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Chatbot.cs",
               "RelativeDocumentMoniker": "ProgPoeP1\\Chatbot.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Chatbot.cs",
-              "RelativeToolTip": "ProgPoeP1\\Chatbot.cs",
-              "ViewState": "AgIAANAAAAAAAAAAAAAAwOQAAABMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Chatbot.cs*",
+              "RelativeToolTip": "ProgPoeP1\\Chatbot.cs*",
+              "ViewState": "AgIAACYAAACAiJmZmdkpwDgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T15:09:01.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Program.cs",
               "RelativeDocumentMoniker": "ProgPoeP1\\Program.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Program.cs",
-              "RelativeToolTip": "ProgPoeP1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lab_services_student\\Desktop\\Progpoe\\PROG6221-POE-P1-Cuan-Oock\\ProgPoeP1\\Program.cs*",
+              "RelativeToolTip": "ProgPoeP1\\Program.cs*",
+              "ViewState": "AgIAAAQAAAAA8v////8BwAgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T15:06:44.871Z",
               "EditorCaption": ""
