@@ -1,4 +1,6 @@
 ﻿
+using System.Collections;
+
 namespace ProgPoeP1
 {
 
@@ -7,9 +9,13 @@ namespace ProgPoeP1
     {
         static void Main(string[] args)
         {
+            //Declaration of different variables
             Chatbot chat = new Chatbot();
             Response responder = new Response();
             ExtendedResponse eResponder = new ExtendedResponse();
+            ArrayList topics = new ArrayList();
+
+            //initiating greeting
             chat.greeting();
             string response = Console.ReadLine(); ;
 
@@ -24,6 +30,10 @@ namespace ProgPoeP1
                 Console.WriteLine(responder.sentimentCheck(response));
                 //Using various methods to identify key words in user input and return a response
                 Console.WriteLine(responder.respond(chat.keyWords(response), chat.questionWords(response), chat.Name));
+                //keeping list of topics to recall 
+                topics.Add(chat.keyWords(response));
+
+                Console.WriteLine(eResponder.recall(topics, chat.keyWords(response)));
 
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.White;

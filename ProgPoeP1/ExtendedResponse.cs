@@ -10,7 +10,8 @@ namespace ProgPoeP1
     internal class ExtendedResponse : Response
     {
         //Method that answers when users are still confused
-        public string checkConfusion(string keyWord) {
+        public string checkConfusion(string keyWord)
+        {
             //default response
             string response = "I'm not sure how to respond to that, I apologize.";
             //Dictionary contianing all responses
@@ -46,16 +47,37 @@ namespace ProgPoeP1
             {"O","More simply put, privacy is just your ability to keep your personal things personal" }
             };
 
-            if (cResponses.ContainsKey(keyWord)) {
+            if (cResponses.ContainsKey(keyWord))
+            {
                 response = cResponses[keyWord];
             }
             return response;
         }
-        public string recall(ArrayList allKeyWords, string activeKeyWord) {
+        //Method to see what was spoken about before
+        public string recall(ArrayList allKeyWords, string activeKeyWord)
+        {
             string recallString = "";
-            
+            //looping through arraylist of all past topics
+            foreach (string keyWord in allKeyWords)
+            {
+                //recall if spoken about scams
+                if (keyWord.Equals("O") && (activeKeyWord.Equals("B") || activeKeyWord.Equals("J") || activeKeyWord.Equals("I")))
+                {
+                    recallString = "This is a scam like we've spoken about before.";
+                }
+                //recall if spoken about password security
+                else if (keyWord.Equals("H") && (activeKeyWord.Equals("C") || activeKeyWord.Equals("D") || activeKeyWord.Equals("F")))
+                {
+                    recallString = "This relates to our previous topic of password safety.";
+                }
+                //recall if spoken about privacy
+                else if (keyWord.Equals("N") && activeKeyWord.Equals("O"))
+                {
+                    recallString = "Since we've spoken about privacy before, you should know that most scams aim to collect you private data.";
+                }
+
+            }
             return recallString;
         }
-
     }
 }
