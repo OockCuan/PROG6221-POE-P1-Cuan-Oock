@@ -8,28 +8,53 @@ namespace ProgPoeP1
         static void Main(string[] args)
         {
             Chatbot chat = new Chatbot();
+            Response responder = new Response();
+            ExtendedResponse eResponder = new ExtendedResponse();
             chat.greeting();
-            string response = Console.ReadLine();
+            string response = Console.ReadLine(); ;
 
 
             //Continuing the application until the user types in "stop"
             while (!(response.Equals("Stop") | response.Equals("stop")))
             {
+                
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Magenta;
+                //responder checking if there are sentiments in response
+                Console.WriteLine(responder.sentimentCheck(response));
+                //Using various methods to identify key words in user input and return a response
+                Console.WriteLine(responder.respond(chat.keyWords(response), chat.questionWords(response), chat.Name));
 
-                //Using three methods to identify key words in user input and return a response
-                Console.WriteLine(chat.respond(chat.keyWords(response), chat.questionWords(response)));
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.WriteLine("\n************************\n");
-                response = Console.ReadLine();
+
+                //temporary response to see if user is still confused
+                string tempResponse = Console.ReadLine();
+
+                //using keywords to identify confusion
+                if ((tempResponse.Contains("Explain") || tempResponse.Contains("explain") || tempResponse.Contains("confu") ||
+                    tempResponse.Contains("Confu") || tempResponse.Contains("detail") || tempResponse.Contains("Detail")) &&
+                    chat.keyWords(tempResponse).Equals("A"))
+                {
+
+                    Console.ForegroundColor = ConsoleColor.Magenta;
+                    Console.WriteLine("\n" + eResponder.checkConfusion(chat.keyWords(response)) + "\n");
+                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.WriteLine("\n************************\n");
+                    response = Console.ReadLine();
+                }
+                //rerunning the loop if user is not confused
+                else { response = tempResponse;
+                    
+                }
+
+                
+            
+                
                 
 
             }
-
-
-            //Console.ReadKey();
         }
     }
 }

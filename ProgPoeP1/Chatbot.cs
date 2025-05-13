@@ -14,6 +14,7 @@ namespace ProgPoeP1
     internal class Chatbot
     {
         private string name;
+        public string Name { get { return name; } }
 
         //method containing greeting code
         public void greeting()
@@ -63,7 +64,7 @@ namespace ProgPoeP1
 
             //Final text for greeting
             Console.ForegroundColor = ConsoleColor.Magenta;
-            Console.WriteLine("How can I help you today?\n");
+            Console.WriteLine("How can I help you today? (type stop at any point to end the program)\n");
             Console.ForegroundColor = ConsoleColor.White;
         }
 
@@ -117,7 +118,10 @@ namespace ProgPoeP1
             //vishing
             else if (text.Contains("vish") | text.Contains("Vishing"))
             {
-                key = "I";
+                if (text.Contains("pharm") | text.Contains("Pharming"))
+                    { key = "G"; }
+                else {
+                    key = "I"; }
             }
             //pharming
             else if (text.Contains("pharm") | text.Contains("Pharming"))
@@ -137,6 +141,14 @@ namespace ProgPoeP1
             {
                 key = "M";
             }
+            else if (text.Contains("Privacy") | text.Contains("privacy"))
+            {
+                key = "N";
+            }
+            else if (text.Contains("Scam") | text.Contains("scam"))
+            {
+                key = "O";
+            }
 
             return key;
         }
@@ -144,7 +156,7 @@ namespace ProgPoeP1
         //Method that identifies what question words are used in the user input to better structure the answer
         public string questionWords(string text)
         {
-            string key = "Default";
+            string key = "what";
             if (text.Contains("tip") | text.Contains("Tip"))
             {
                 key = "tip";
@@ -158,114 +170,7 @@ namespace ProgPoeP1
             return key;
         }
 
-        //Method that holds all the preprogrammed responses for the chat bot
-        public string respond(string keyword, string questionWord)
-        {
-            //default response that asks user to change input
-            string response = "Sorry, I didn't quite understand that, could you rephrase or maybe change the spelling? I might also have not been trained on this topic";
-
-            //Answers for generic questions
-            if (keyword.Equals("K")) {
-                response = "I'm doing great " + this.name + ", ready to answer your cyber security questions!";
-                return response;
-            } 
-            else if (keyword.Equals("L")) {
-                response = "My purpose is to help people learn more about everything cybersecurity. You can ask me your cyber security questions.";
-                return response;
-            }
-            else if (keyword.Equals("M"))
-            {
-                response = "I've been trained on types of cyber scams as well as internet and password safety, so you can ask about those.";
-                return response;
-            }
-            
-            //All other response options
-            
-                switch (keyword)
-                {
-                //phishing responses
-                    case "B":
-                    if (questionWord.Equals("tip"))
-                    {
-                        response = "Here's some tips to avoid phsihing\n" +
-                            "-Always check where emails come from and make sure they have official domains \n" +
-                            "-Do not click on unknown links sent through email, rather go to the website (if its trusted) through your browser";
-                    }
-                    else
-                    {
-                        response = "Phishing is an email scam where someone will send you an email pretending to be a reputable source, like yor bank..";
-                    }
-                    break;
-
-                //safety responses
-                case "C":
-
-                    response = "Being safe while browsing on the internet can be tricky, heres some tips to help with that \n" +
-                            "-Don't go to piracy websites as they could give your device malware/viruses\n" +
-                            "-Don't connect to free internet in public, only use trusted networks.";
-                        break;
-                //internet safety
-                    case "D":
-                        response = "Being safe on the internet can be tricky, heres some tips to help with that \n" +
-                            "-Don't go to piracy websites as they could give your device malware/viruses\n" +
-                            "-Don't connect to free internet in public, only use trusted networks.";
-                        break;
-                //browsing safety
-                    case "F":
-                        response = "Being safe while browsing on the internet can be tricky, heres some tips to help with that \n" +
-                            "-Don't go to piracy websites as they could give your device malware/viruses\n" +
-                            "-Don't connect to free internet in public, only use trusted networks.";
-                        break;
-                //phishing vs vishing vs pharming
-                    case "G":
-                        response = "Many people confuse phishing, vishing and pharming. Let me help you understand the difference.\n" +
-                            "phishing is an email scam, vishing is done through telephone calls and pharming redirects people to fake websites that look real.";
-                        break;
-                //password safety
-                    case "H":
-                    if (questionWord.Equals("tip"))
-                    {
-                        response = "Here's some tips on making a good password\n" +
-                            "-Make sure your password is at least 8 characters and contains special characters \n" +
-                            "-Include numbers, upper and lowercase letters in your passweords";
-                    }
-                    else
-                    {
-                        response = "Password safety is very important, this means developing complex passwords to make it harder for hackers to access your accounts.";
-                    }
-                    break;
-                //vishing
-                case "I":
-                    if (questionWord.Equals("tip"))
-                    {
-                        response = "Here's some tips to help you avoid vishing\n" +
-                            "-Don't trust calls from supposedly credible sources like banks or ISPs, rather call them through trusted numbers \n" +
-                            "-Don't give personal information over calls";
-                    }
-                    else
-                    {
-                        response = "Vishing is a kind of scam where a scammer will call you pretending to be someone, or a company, you would trust.";
-                    }
-                    break;
-                //pharming
-                case "J":
-                    if (questionWord.Equals("tip")) 
-                    {
-                        response = "Here's some tips to help you avoid pharming\n" +
-                            "-Always make sure the websites you visit are secure (using https or have a lock icon) \n" +
-                            "-Keep an up to date antivirus that protects you while browsing";
-                    }
-                    else
-                    {
-                        response = "Pharming is a common scam where, while browsing, a scammer will redirect you to a fake website that looks credible.";
-                    }
-                        break;
-
-
-
-            }
-            return response;
-        }
+        
     }
 }
 
